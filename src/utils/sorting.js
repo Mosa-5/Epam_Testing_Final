@@ -10,11 +10,6 @@ function parsePrice(text) {
   return value;
 }
 
-// Mandatory comparator.
-function sortAscending(values) {
-  return [...values].sort((a, b) => a - b);
-}
-
 // Reports where the order first breaks.
 function isSortedAscending(values) {
   for (let i = 1; i < values.length; i++) {
@@ -31,4 +26,4 @@ function isSortedAscending(values) {
   return { sorted: true };
 }
 
-module.exports = { parsePrice, sortAscending, isSortedAscending };
+module.exports = { parsePrice, isSortedAscending };
