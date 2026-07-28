@@ -2,12 +2,13 @@
   "name": "epam-final",
   "version": "1.0.0",
   "description": "Task description \"Inventory Logic\" Flow",
+  "private": true,
   "main": "index.js",
   "scripts": {
-    "test": "wdio run ./wdio.conf.js",
-    "test:firefox": "cross-env BROWSER=firefox wdio run ./wdio.conf.js",
-    "test:edge": "cross-env BROWSER=edge wdio run ./wdio.conf.js",
-    "test:headed": "cross-env HEADLESS=false wdio run ./wdio.conf.js"
+    "test": "wdio run ./src/config/wdio.conf.js",
+    "test:firefox": "cross-env BROWSER=firefox wdio run ./src/config/wdio.conf.js",
+    "test:edge": "cross-env BROWSER=edge wdio run ./src/config/wdio.conf.js",
+    "test:headed": "cross-env HEADLESS=false wdio run ./src/config/wdio.conf.js"
   },
   "keywords": [],
   "author": "",
